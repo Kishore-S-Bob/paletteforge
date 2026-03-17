@@ -1,0 +1,131 @@
+Product Requirements Document
+PaletteForge
+Color Palette Generator
+
+v1.0
+VersionMar 2026
+Date$0/mo
+Running Cost1-2 days
+Build Time
+
+
+1. Product Overview
+
+1.1 Product Vision
+PaletteForge is a free, browser-based colour palette generator that lets designers and developers pick a base colour and instantly generate 5 palette types — with one-click export as CSS variables, Tailwind config, or SCSS. Every generated palette gets a unique shareable URL, making the product inherently viral: every share is a free advertisement.
+
+1.2 Problem Statement
+Designers and developers need colour palettes constantly, but existing tools (Coolors, Adobe Color) are either slow, require accounts, or produce palettes that cannot be exported in developer-ready formats. There is no single clean tool that combines instant palette generation, WCAG contrast checking, and multi-format code export — all without login or cost.
+
+1.3 Product Goals
+• Deliver a palette from a single colour click in under 1 second
+• Make every palette shareable via a URL — the core viral loop
+• Export palettes in CSS, Tailwind, and SCSS formats developers actually use
+• Reach 1,000 daily active users within 30 days of launch with $0 marketing spend
+• Generate first revenue within 60 days via Google AdSense
+
+1.4 Success Metrics
+MetricTargetDaily Active Users1,000 by Day 30 / 5,000 by Day 90Viral CoefficientAt least 1 in 5 users clicks 'Tweet this palette'Session DurationAverage 3+ minutes per visitReturn Rate30% of users return within 7 daysPro Conversion2% of users upgrade to Pro within 60 daysAdSense RPM$3–8 per 1,000 visitors (design audience)
+
+
+2. User Personas
+
+2.1 Primary — The Developer-Designer
+NameArjun, 26
+RoleFrontend developer / indie hacker building side projects
+PainPicks colours manually from a reference image, wastes 20 min getting CSS variables right
+GoalGet a full usable palette with CSS vars in under 60 seconds, no account needed
+2.2 Secondary — The UI/UX Designer
+NamePriya, 29
+RoleFreelance UI designer, works in Figma, shares work on Dribbble
+PainCoolors is slow on mobile and doesn't export in Tailwind format her dev needs
+GoalGenerate and share beautiful palettes quickly — screenshot-ready for social posts
+2.3 Tertiary — The Student / Hobbyist
+NameRohan, 20
+RoleCS student building his first portfolio website
+PainHas no design training, doesn't know what colours go together
+GoalPick one colour he likes and get a full palette that 'just works'
+
+
+3. Feature Requirements
+
+3.1 Core Features (MVP — Phase 1)
+
+FeatureDescriptionPriorityPhaseColour PickerHEX input + native browser colour picker. Instant update on change.Must HavePhase 15 Palette TypesComplementary, Triadic, Analogous, Split-complementary, Monochromatic. Generated with chroma.js.Must HavePhase 1Colour Swatches5 swatches per palette row, showing hex code. Click to copy hex.Must HavePhase 1CSS ExportOutput ready-to-use CSS custom properties (--color-1: #hex)Must HavePhase 1Tailwind ExportOutput Tailwind colors config object, paste into tailwind.config.jsMust HavePhase 1SCSS ExportOutput SCSS variables ($color-1: #hex)Must HavePhase 1Shareable URLEach palette encodes base colour + type in URL query string (?color=ff6b6b&type=complementary)Must HavePhase 1Tweet ButtonPre-fills tweet with palette screenshot and URL. Core viral mechanic.Must HavePhase 1Copy Share LinkOne-click copy of shareable URL to clipboardMust HavePhase 1
+3.2 Enhanced Features (Phase 2)
+
+FeatureDescriptionPriorityPhaseWCAG Contrast CheckShow white/black text readability (AA/AAA pass/fail) on each swatchShould HavePhase 2Featured Gallery12 pre-made named palettes on homepage (Sunset, Ocean, Forest etc). Drives SEO.Should HavePhase 2Image Colour ExtractUpload any image — extract 5 dominant colours as a paletteShould HavePhase 2Palette NameUser can name their palette before sharing. Shows in tweet + URLShould HavePhase 2Mobile ResponsiveFull Tailwind responsive design. Tested at 375px.Should HavePhase 2Dark ModeSystem-preference dark mode using CSS variablesNice to HavePhase 2
+3.3 Monetisation Features (Phase 3)
+
+FeatureDescriptionPriorityPhaseGoogle AdSenseNon-intrusive banner ad below the generator. Requires 100+ daily visitors to apply.Must HavePhase 3Pro Plan — $6/moUnlimited saved palettes, no ads, API access, custom palette namesShould HavePhase 3Palette HistoryFree users: last 5 palettes. Pro: unlimited history synced across devices.Should HavePhase 3Team SharingPro teams can create shared palette libraries (5+ seats)Nice to HavePhase 3
+
+
+4. Technical Specifications
+
+4.1 Tech Stack
+ComponentChoice & ReasonFrameworkNext.js 14 (App Router) — fast, SEO-friendly, free Vercel hostingStylingTailwind CSS — utility-first, responsive out of the boxColour Enginechroma.js — open source, handles all palette math, browser-nativeHostingVercel Free Tier — auto-deploy from GitHub, global CDN, HTTPSDomainNamecheap — ~$10/yr for a .io or .co domainAnalyticsVercel Analytics (free) + Google Analytics (free)Payments (Phase 3)Stripe — free to set up, 2.9% + $0.30 per transactionDatabase (Phase 3)Supabase Free Tier — for saved palettes and user accounts
+4.2 Architecture Overview
+PaletteForge is a fully static Next.js application for Phase 1 and 2 — no server, no database, no backend. All colour generation happens in the browser using chroma.js. The shareable URL system uses query parameters only — no server-side storage required. This keeps running costs at zero and page load times under 1 second globally.
+
+Phase 3 introduces optional Supabase integration for user accounts and saved palettes, but the core tool remains fully functional without login.
+
+4.3 Performance Requirements
+MetricRequirementPalette Generation< 50ms from colour input to all 5 palettes renderedPage Load (Cold)< 1.5s on 3G connection (Vercel CDN handles this automatically)Export Code Gen< 10ms to generate CSS/Tailwind/SCSS output on button clickURL SharingShareable URL must load correct palette in < 200msMobile PerformanceLighthouse score > 90 on mobile
+
+
+5. UX & Design Requirements
+
+5.1 Design Principles
+• Screenshot-first — every palette row must look beautiful in a social media screenshot
+• Zero friction — no login, no account, no popups on first visit
+• One screen — the entire tool should be visible without scrolling on desktop
+• Copy-ready — every piece of output (hex, code, URL) copies in one click
+
+5.2 Page Structure
+SectionContentHero SectionTool name, one-line description, colour picker prominently displayedPalette Display5 palette type rows, each with 5 colour swatches + hex labelsExport Panel3 tabs: CSS / Tailwind / SCSS. Code block with copy button.Share Section'Tweet this palette' button + 'Copy link' button side by sideFeatured Gallery12 pre-made palettes in a 4-column grid below the generatorFooterAbout, GitHub link, AdSense unit (Phase 3)
+5.3 Colour Swatch Design
+• Each swatch: minimum 80px tall, full width divided equally across 5 colours
+• Hex code displayed on hover (desktop) and always visible on mobile
+• Click copies hex to clipboard — show brief 'Copied!' toast confirmation
+• WCAG pass/fail badge overlaid on swatch (Phase 2)
+
+
+
+6. Go-to-Market Plan
+
+6.1 Pre-Launch (Week 0)
+• Generate 20 beautiful palettes and save screenshots
+• Write 5 Twitter launch post drafts
+• Prepare Product Hunt listing with screenshots and demo GIF
+• Submit to 5 design tool directories (designtools.fyi, undesign.co, etc.)
+
+6.2 Launch Day (Day 1 — Tuesday)
+TimeAction12:01am PSTSubmit to Product Hunt — Tuesday for maximum visibility9:00amPost on Twitter/X with best palette screenshot + URL10:00amPost on r/webdev: 'I built a free colour palette generator'11:00amPost on r/web_design with a gallery of 6 palettes made with the tool2:00pmPost on Indie Hackers: honest story of building it in a weekendAll dayReply to every comment — engagement boosts algorithmic reach
+6.3 Growth Loop
+The core viral mechanic: every time a user clicks 'Tweet this palette', Twitter shows the palette image and the tool URL to their followers. Designers tweet palettes constantly — this is existing behaviour, not new friction. The goal is to insert PaletteForge into a habit that already exists.
+
+• User generates palette they love
+• Clicks 'Tweet this palette' — pre-filled tweet with image + URL
+• Their followers see the palette and click the link
+• New user generates their own palette and tweets it
+
+
+
+7. Monetisation Plan
+
+7.1 Phase 1 — No Revenue (Days 1–30)
+Focus entirely on growth. No ads, no paywalls, nothing that slows adoption. The goal is to reach 1,000 daily active users before monetising.
+
+7.2 Phase 2 — AdSense (Days 30–60)
+Apply for Google AdSense once daily traffic exceeds 100 visitors. Design and dev audiences command $3–8 RPM. At 5,000 visitors/day that is $15–40 per day passively — approximately $450–1,200 per month.
+
+7.3 Phase 3 — Pro Plan (Day 60+)
+TierDetailsFree5 palettes/session, no save, ads visible, all palette types, all exportsPro — $6/moUnlimited saves, no ads, palette history, API access, team shareTarget Conversion2% of daily active users — at 5,000 DAU = 100 Pro users = $600 MRR
+8. Development Milestones
+
+MilestoneDeliverableDay 1 — End of DayColour picker + all 5 palette types working locallyDay 2 — MorningExport panel (CSS/Tailwind/SCSS) completeDay 2 — AfternoonShareable URL + Tweet button workingDay 2 — EveningDeployed live on Vercel with custom domainWeek 2Featured gallery, mobile responsiveness, WCAG badgesWeek 3Image colour extraction, dark mode, SEO meta tagsDay 30Apply for Google AdSense (once 100+ daily visitors confirmed)Day 60Launch Pro plan with Stripe + Supabase
+9. Risks & Mitigations
+
+RiskMitigationCompetition from Coolors/Adobe ColorDifferentiate on speed, export formats, and shareable URLs. They are slow to ship features.Low organic trafficSubmit to design directories on Day 1. One Product Hunt feature can send 5,000 visitors.AdSense rejectionEnsure 30+ days of traffic history before applying. Have a basic privacy policy page.chroma.js limitationLibrary is mature (10+ years), well-maintained, 0 known breaking issues.Vercel free tier limits100GB bandwidth/mo free. At 5,000 visitors/day with ~50KB pages = ~7.5GB/mo — well within free tier.
+PaletteForge PRD v1.0 — March 2026
+Confidential — Internal Use Only
