@@ -30,17 +30,17 @@ export const Controls: React.FC<ControlsProps> = ({
   };
 
   return (
-    <div className="flex flex-wrap items-center gap-6 p-6 bg-white rounded-2xl shadow-lg border border-brand-slate-100 mb-8 animate-in fade-in slide-in-from-top-4 duration-700">
+    <div className="flex flex-wrap items-center gap-6 p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-brand-slate-100 dark:border-slate-700 mb-8 animate-in fade-in slide-in-from-top-4 duration-700">
       <ColourPicker value={baseColor} onChangeAction={setBaseColorAction} />
 
       <div className="flex flex-col gap-2 ml-auto">
-        <label className="text-sm font-bold text-brand-slate-600 uppercase tracking-widest text-right">
+        <label className="text-sm font-bold text-brand-slate-600 dark:text-slate-400 uppercase tracking-widest text-right">
           Share Palette
         </label>
         <div className="flex gap-2">
           <button
             onClick={handleCopyLink}
-            className="px-6 py-2 bg-brand-slate-100 hover:bg-brand-slate-200 text-brand-slate-700 font-bold rounded-xl transition-colors duration-200 flex items-center gap-2"
+            className="px-6 py-2 bg-brand-slate-100 dark:bg-slate-900 hover:bg-brand-slate-200 dark:hover:bg-slate-800 text-brand-slate-700 dark:text-slate-100 font-bold rounded-xl transition-colors duration-200 flex items-center gap-2"
           >
             <span>🔗</span> Copy Link
           </button>

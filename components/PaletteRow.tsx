@@ -20,13 +20,13 @@ export const PaletteRow: React.FC<PaletteRowProps> = ({
       onClick={onSelectAction}
       className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 cursor-pointer transition-all duration-150 border-l-4 ${
         isActive
-          ? "bg-brand-rose-50 border-brand-rose-500"
-          : "bg-white border-transparent hover:bg-brand-slate-50"
+          ? "bg-brand-rose-50 dark:bg-brand-rose-950/20 border-brand-rose-500"
+          : "bg-white dark:bg-transparent border-transparent hover:bg-brand-slate-50 dark:hover:bg-slate-800/50"
       } rounded-r-xl`}
     >
       {/* Label */}
       <div className="w-full sm:w-32 lg:w-40 shrink-0">
-        <span className="text-sm font-medium text-brand-slate-700 uppercase tracking-wide">
+        <span className="text-sm font-medium text-brand-slate-700 dark:text-slate-100 uppercase tracking-wide">
           {palette.label}
         </span>
       </div>

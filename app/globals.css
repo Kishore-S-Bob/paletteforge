@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
+/* Tailwind v4: class-based dark mode via custom variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
   html,
   body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #0f172a; /* brand-slate-900 */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

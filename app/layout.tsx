@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -43,8 +44,15 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased text-brand-slate-900 bg-white`}>
-        {children}
+      <body className={`${inter.variable} font-sans antialiased text-brand-slate-900 dark:text-slate-100 bg-white dark:bg-slate-900 transition-colors`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

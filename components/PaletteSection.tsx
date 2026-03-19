@@ -10,15 +10,15 @@ interface PaletteSectionProps {
 
 export const PaletteSection: React.FC<PaletteSectionProps> = ({ palette }) => {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-sm border border-brand-slate-200 mb-8 last:mb-0">
+    <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-brand-slate-200 dark:border-slate-700 mb-8 last:mb-0">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-brand-slate-900">{palette.label}</h2>
-        <span className="text-xs font-medium uppercase tracking-wider text-brand-slate-400 bg-brand-slate-50 px-2 py-1 rounded">
+        <h2 className="text-xl font-bold text-brand-slate-900 dark:text-slate-100">{palette.label}</h2>
+        <span className="text-xs font-medium uppercase tracking-wider text-brand-slate-400 dark:text-slate-400 bg-brand-slate-50 dark:bg-slate-900 px-2 py-1 rounded">
           {palette.type}
         </span>
       </div>
       
-      <div className="flex flex-col md:flex-row gap-2 md:gap-0 overflow-hidden md:rounded-xl md:border md:border-brand-slate-200">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-0 overflow-hidden md:rounded-xl md:border md:border-brand-slate-200 dark:md:border-slate-700">
         {palette.colours.map((colour, i) => (
           <div key={`${palette.type}-${colour.hex}-${i}`} className="flex-1">
             <ColourSwatch 
@@ -31,8 +31,8 @@ export const PaletteSection: React.FC<PaletteSectionProps> = ({ palette }) => {
               }
             />
             <div className="mt-2 md:hidden flex justify-between items-center px-1">
-              <span className="text-xs font-mono font-medium text-brand-slate-500">{colour.hex}</span>
-              <span className="text-[10px] text-brand-slate-400">{colour.name}</span>
+              <span className="text-xs font-mono font-medium text-brand-slate-500 dark:text-slate-400">{colour.hex}</span>
+              <span className="text-[10px] text-brand-slate-400 dark:text-slate-400">{colour.name}</span>
             </div>
           </div>
         ))}
@@ -41,8 +41,8 @@ export const PaletteSection: React.FC<PaletteSectionProps> = ({ palette }) => {
       <div className="hidden md:flex justify-between mt-3 px-1">
         {palette.colours.map((colour, i) => (
           <div key={`info-${i}`} className="flex-1 text-center">
-            <p className="text-xs font-mono font-medium text-brand-slate-600">{colour.hex}</p>
-            <p className="text-[10px] text-brand-slate-400">{colour.name}</p>
+            <p className="text-xs font-mono font-medium text-brand-slate-600 dark:text-slate-100">{colour.hex}</p>
+            <p className="text-[10px] text-brand-slate-400 dark:text-slate-400">{colour.name}</p>
           </div>
         ))}
       </div>

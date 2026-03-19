@@ -379,12 +379,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Palle
 const PaletteRow = ({ palette, isActive, onSelectAction })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         onClick: onSelectAction,
-        className: `group flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 cursor-pointer transition-all duration-150 border-l-4 ${isActive ? "bg-brand-rose-50 border-brand-rose-500" : "bg-white border-transparent hover:bg-brand-slate-50"} rounded-r-xl`,
+        className: `group flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 cursor-pointer transition-all duration-150 border-l-4 ${isActive ? "bg-brand-rose-50 dark:bg-brand-rose-950/20 border-brand-rose-500" : "bg-white dark:bg-transparent border-transparent hover:bg-brand-slate-50 dark:hover:bg-slate-800/50"} rounded-r-xl`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full sm:w-32 lg:w-40 shrink-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-sm font-medium text-brand-slate-700 uppercase tracking-wide",
+                    className: "text-sm font-medium text-brand-slate-700 dark:text-slate-100 uppercase tracking-wide",
                     children: palette.label
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/Pallete/pallete/components/PaletteRow.tsx",
@@ -525,10 +525,10 @@ ${colors}
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white rounded-2xl border border-brand-slate-100 shadow-sm overflow-hidden flex flex-col",
+        className: "bg-white dark:bg-slate-800 rounded-2xl border border-brand-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between border-b border-brand-slate-100 bg-brand-slate-50/50 px-6 py-4",
+                className: "flex items-center justify-between border-b border-brand-slate-100 dark:border-slate-700 bg-brand-slate-50/50 dark:bg-slate-800/50 px-6 py-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex gap-4",
@@ -538,7 +538,7 @@ ${colors}
                             "SCSS Variables"
                         ].map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveTab(tab),
-                                className: `text-sm font-bold transition-colors ${activeTab === tab ? "text-brand-rose-500" : "text-brand-slate-400 hover:text-brand-slate-600"}`,
+                                className: `text-sm font-bold transition-colors ${activeTab === tab ? "text-brand-rose-500" : "text-brand-slate-400 dark:text-slate-400 hover:text-brand-slate-600 dark:hover:text-slate-300"}`,
                                 children: tab
                             }, tab, false, {
                                 fileName: "[project]/OneDrive/Desktop/Pallete/pallete/components/ExportPanel.tsx",
@@ -563,7 +563,7 @@ ${colors}
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: handleCopy,
-                                className: "text-xs font-bold text-brand-slate-600 hover:text-brand-rose-500 flex items-center gap-1 transition-colors",
+                                className: "text-xs font-bold text-brand-slate-600 dark:text-slate-400 hover:text-brand-rose-500 flex items-center gap-1 transition-colors",
                                 children: copied ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "flex items-center gap-1 text-green-500",
                                     children: [
@@ -676,10 +676,10 @@ ${colors}
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-brand-slate-50 px-6 py-2 border-t border-brand-slate-100 flex justify-between items-center",
+                className: "bg-brand-slate-50 dark:bg-slate-800/30 px-6 py-2 border-t border-brand-slate-100 dark:border-slate-700 flex justify-between items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[10px] font-medium text-brand-slate-400 uppercase tracking-tighter",
+                        className: "text-[10px] font-medium text-brand-slate-400 dark:text-slate-400 uppercase tracking-tighter",
                         children: "Ready for production use"
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/Pallete/pallete/components/ExportPanel.tsx",
@@ -791,7 +791,7 @@ const ColourPicker = ({ value, onChangeAction })=>{
         className: "flex flex-col gap-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: "text-sm font-medium text-brand-slate-500",
+                className: "text-sm font-medium text-brand-slate-500 dark:text-slate-400",
                 children: "Pick a base colour"
             }, void 0, false, {
                 fileName: "[project]/OneDrive/Desktop/Pallete/pallete/components/ColourPicker.tsx",
@@ -802,7 +802,7 @@ const ColourPicker = ({ value, onChangeAction })=>{
                 className: "flex items-center gap-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-slate-100 shadow-sm transition-transform hover:scale-105 active:scale-95",
+                        className: "relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-slate-100 dark:border-slate-700 shadow-sm transition-transform hover:scale-105 active:scale-95",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "color",
                             value: value,
@@ -831,7 +831,7 @@ const ColourPicker = ({ value, onChangeAction })=>{
                                 value: localValue,
                                 onChange: handleTextChange,
                                 maxLength: 7,
-                                className: `px-4 py-2 w-32 font-mono text-lg font-bold rounded-xl border-2 transition-all outline-none ${isValid ? "border-brand-slate-100 focus:border-brand-rose-400 bg-white" : "border-red-500 focus:border-red-600 bg-red-50 text-red-900"}`
+                                className: `px-4 py-2 w-32 font-mono text-lg font-bold rounded-xl border-2 transition-all outline-none ${isValid ? "border-brand-slate-100 dark:border-slate-700 focus:border-brand-rose-400 dark:focus:border-brand-rose-500 bg-white dark:bg-slate-900 dark:text-slate-100" : "border-red-500 focus:border-red-600 bg-red-50 dark:bg-red-950/20 text-red-900 dark:text-red-200"}`
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/Pallete/pallete/components/ColourPicker.tsx",
                                 lineNumber: 75,
@@ -1040,7 +1040,7 @@ function PaletteContent() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-5xl font-black tracking-tight text-brand-slate-900",
+                                className: "text-5xl font-black tracking-tight text-brand-slate-900 dark:text-slate-100",
                                 children: [
                                     "Palette",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1064,7 +1064,7 @@ function PaletteContent() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-xl text-brand-slate-500 max-w-2xl mb-12",
+                        className: "text-xl text-brand-slate-500 dark:text-slate-400 max-w-2xl mb-12",
                         children: "Beautiful colour palettes in seconds. Export as CSS, Tailwind, or SCSS. Built for modern design workflows."
                     }, void 0, false, {
                         fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
@@ -1072,7 +1072,7 @@ function PaletteContent() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white p-8 rounded-3xl shadow-xl shadow-brand-slate-200/50 border border-brand-slate-100 mb-4 scale-110",
+                        className: "bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl shadow-brand-slate-200/50 dark:shadow-none border border-brand-slate-100 dark:border-slate-700 mb-4 scale-110",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$components$2f$ColourPicker$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ColourPicker"], {
                             value: baseHex,
                             onChangeAction: setBaseHex
@@ -1095,11 +1095,11 @@ function PaletteContent() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 mb-8 flex items-center gap-4",
+                        className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 dark:text-slate-400 mb-8 flex items-center gap-4",
                         children: [
                             "Theory Variants",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "h-px bg-brand-slate-200 flex-grow"
+                                className: "h-px bg-brand-slate-200 dark:bg-slate-700 flex-grow"
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
                                 lineNumber: 100,
@@ -1112,7 +1112,7 @@ function PaletteContent() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-4 bg-white p-4 rounded-3xl border border-brand-slate-100 shadow-sm",
+                        className: "flex flex-col gap-4 bg-white dark:bg-slate-800 p-4 rounded-3xl border border-brand-slate-100 dark:border-slate-700 shadow-sm",
                         children: palettes.map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$components$2f$PaletteRow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaletteRow"], {
                                 palette: p,
                                 isActive: activeType === p.type,
@@ -1140,11 +1140,11 @@ function PaletteContent() {
                         className: "lg:col-span-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 mb-6 flex items-center gap-4",
+                                className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 dark:text-slate-400 mb-6 flex items-center gap-4",
                                 children: [
                                     "Code Export",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "h-px bg-brand-slate-200 flex-grow"
+                                        className: "h-px bg-brand-slate-200 dark:bg-slate-700 flex-grow"
                                     }, void 0, false, {
                                         fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
                                         lineNumber: 119,
@@ -1172,11 +1172,11 @@ function PaletteContent() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 mb-6 flex items-center gap-4",
+                                className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 dark:text-slate-400 mb-6 flex items-center gap-4",
                                 children: [
                                     "Spread the word",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "h-px bg-brand-slate-200 flex-grow"
+                                        className: "h-px bg-brand-slate-200 dark:bg-slate-700 flex-grow"
                                     }, void 0, false, {
                                         fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
                                         lineNumber: 127,
@@ -1220,7 +1220,7 @@ function PaletteContent() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: handleCopyLink,
-                                        className: "w-full py-4 bg-white border-2 border-brand-slate-100 text-brand-slate-700 rounded-2xl font-bold flex items-center justify-center gap-3 hover:border-brand-rose-200 hover:text-brand-rose-500 transition-all hover:scale-[1.02] active:scale-95 shadow-sm",
+                                        className: "w-full py-4 bg-white dark:bg-slate-800 border-2 border-brand-slate-100 dark:border-slate-700 text-brand-slate-700 dark:text-slate-100 rounded-2xl font-bold flex items-center justify-center gap-3 hover:border-brand-rose-200 dark:hover:border-brand-rose-500 hover:text-brand-rose-500 transition-all hover:scale-[1.02] active:scale-95 shadow-sm",
                                         children: copied ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-green-500 flex items-center gap-2",
                                             children: "✓ Copied!"
@@ -1262,11 +1262,11 @@ function PaletteContent() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 mb-8 flex items-center gap-4",
+                        className: "text-xs font-black uppercase tracking-[0.2em] text-brand-slate-400 dark:text-slate-400 mb-8 flex items-center gap-4",
                         children: [
                             "Featured Gallery",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "h-px bg-brand-slate-200 flex-grow"
+                                className: "h-px bg-brand-slate-200 dark:bg-slate-700 flex-grow"
                             }, void 0, false, {
                                 fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
                                 lineNumber: 155,
@@ -1285,7 +1285,7 @@ function PaletteContent() {
                             const preview = previewPalettes.find((p)=>p.type === 'monochromatic')?.colours || [];
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setBaseHex(f.hex),
-                                className: "group text-left bg-white p-3 rounded-2xl border border-brand-slate-100 hover:border-brand-rose-300 hover:shadow-xl hover:shadow-brand-rose-500/5 transition-all duration-300",
+                                className: "group text-left bg-white dark:bg-slate-800 p-3 rounded-2xl border border-brand-slate-100 dark:border-slate-700 hover:border-brand-rose-300 dark:hover:border-brand-rose-500 hover:shadow-xl hover:shadow-brand-rose-500/5 transition-all duration-300",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex h-12 w-full rounded-lg overflow-hidden mb-3",
@@ -1305,7 +1305,7 @@ function PaletteContent() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-sm font-bold text-brand-slate-700 group-hover:text-brand-rose-500 transition-colors",
+                                        className: "text-sm font-bold text-brand-slate-700 dark:text-slate-100 group-hover:text-brand-rose-500 transition-colors",
                                         children: f.name
                                     }, void 0, false, {
                                         fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
@@ -1339,9 +1339,9 @@ function PaletteContent() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "mt-24 pt-12 border-t border-brand-slate-100 text-center",
+                className: "mt-24 pt-12 border-t border-brand-slate-100 dark:border-slate-700 text-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-brand-slate-400 text-sm",
+                    className: "text-brand-slate-400 dark:text-slate-400 text-sm",
                     children: "© 2026 PaletteForge Engine. All rights reserved."
                 }, void 0, false, {
                     fileName: "[project]/OneDrive/Desktop/Pallete/pallete/app/page.tsx",
@@ -1369,7 +1369,7 @@ _s(PaletteContent, "iysECNe2fue8ZeNlrxIVkfi/Sb8=", false, function() {
 _c = PaletteContent;
 function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-        className: "flex min-h-screen flex-col items-center p-6 md:p-12 bg-brand-slate-50",
+        className: "flex min-h-screen flex-col items-center p-6 md:p-12 bg-brand-slate-50 dark:bg-slate-900",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"], {
             fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Pallete$2f$pallete$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center h-screen",

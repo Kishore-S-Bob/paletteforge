@@ -51,12 +51,12 @@ export const ColourPicker: React.FC<ColourPickerProps> = ({ value, onChangeActio
 
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-sm font-medium text-brand-slate-500">
+      <label className="text-sm font-medium text-brand-slate-500 dark:text-slate-400">
         Pick a base colour
       </label>
       <div className="flex items-center gap-4">
         {/* Native Color Picker Wrapper */}
-        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-slate-100 shadow-sm transition-transform hover:scale-105 active:scale-95">
+        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-slate-100 dark:border-slate-700 shadow-sm transition-transform hover:scale-105 active:scale-95">
           <input
             type="color"
             value={value}
@@ -79,8 +79,8 @@ export const ColourPicker: React.FC<ColourPickerProps> = ({ value, onChangeActio
             maxLength={7}
             className={`px-4 py-2 w-32 font-mono text-lg font-bold rounded-xl border-2 transition-all outline-none ${
               isValid 
-                ? "border-brand-slate-100 focus:border-brand-rose-400 bg-white" 
-                : "border-red-500 focus:border-red-600 bg-red-50 text-red-900"
+                ? "border-brand-slate-100 dark:border-slate-700 focus:border-brand-rose-400 dark:focus:border-brand-rose-500 bg-white dark:bg-slate-900 dark:text-slate-100" 
+                : "border-red-500 focus:border-red-600 bg-red-50 dark:bg-red-950/20 text-red-900 dark:text-red-200"
             }`}
           />
           {!isValid && (

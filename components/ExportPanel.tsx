@@ -71,9 +71,9 @@ ${colors}
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-brand-slate-100 shadow-sm overflow-hidden flex flex-col">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl border border-brand-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col">
       {/* Panel Header/Tabs */}
-      <div className="flex items-center justify-between border-b border-brand-slate-100 bg-brand-slate-50/50 px-6 py-4">
+      <div className="flex items-center justify-between border-b border-brand-slate-100 dark:border-slate-700 bg-brand-slate-50/50 dark:bg-slate-800/50 px-6 py-4">
         <div className="flex gap-4">
           {(["CSS Variables", "Tailwind Config", "SCSS Variables"] as ExportFormat[]).map((tab) => (
             <button
@@ -82,7 +82,7 @@ ${colors}
               className={`text-sm font-bold transition-colors ${
                 activeTab === tab 
                   ? "text-brand-rose-500" 
-                  : "text-brand-slate-400 hover:text-brand-slate-600"
+                  : "text-brand-slate-400 dark:text-slate-400 hover:text-brand-slate-600 dark:hover:text-slate-300"
               }`}
             >
               {tab}
@@ -96,7 +96,7 @@ ${colors}
           </span>
           <button
             onClick={handleCopy}
-            className="text-xs font-bold text-brand-slate-600 hover:text-brand-rose-500 flex items-center gap-1 transition-colors"
+            className="text-xs font-bold text-brand-slate-600 dark:text-slate-400 hover:text-brand-rose-500 flex items-center gap-1 transition-colors"
           >
             {copied ? (
               <span className="flex items-center gap-1 text-green-500">
@@ -124,8 +124,8 @@ ${colors}
         </pre>
       </div>
       
-      <div className="bg-brand-slate-50 px-6 py-2 border-t border-brand-slate-100 flex justify-between items-center">
-        <p className="text-[10px] font-medium text-brand-slate-400 uppercase tracking-tighter">
+      <div className="bg-brand-slate-50 dark:bg-slate-800/30 px-6 py-2 border-t border-brand-slate-100 dark:border-slate-700 flex justify-between items-center">
+        <p className="text-[10px] font-medium text-brand-slate-400 dark:text-slate-400 uppercase tracking-tighter">
           Ready for production use
         </p>
         <div className="flex gap-1">
